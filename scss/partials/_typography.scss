@@ -1,0 +1,97 @@
+/*----------------------------------------------   
+--Typography: Body
+-----------------------------------------------  */
+body {
+  font-family: $font-paragraph;
+  color: #444;
+  position: relative;
+  width: 100%;
+  font-weight: 400;
+  font-style: normal;
+  line-height: $base-lineheight;
+}
+
+/*----------------------------------------------   
+--Typography: Fluid body sizing hotness
+* Adjust to suit your needs.
+-----------------------------------------------  */
+body {
+font-size: 100%;
+  
+  @media (min-width: $mq-small) {
+    font-size: 110%
+  }
+  @media (min-width: $mq-med) {
+    font-size: 120%
+  }
+  @media (min-width: $mq-large) {
+    font-size: 130%
+  }
+  @media (min-width: $mq-xlarge) {
+    font-size: 160%
+  }
+  @media (min-width: $mq-xxlarge) {
+    font-size: 170%
+  }
+  @media (min-width: $mq-xxxlarge) {
+    font-size: 180%
+  }
+}
+
+/*----------------------------------------------   
+--Typography: Headers
+-----------------------------------------------  */
+h1,h2,h3,h4,h5,h6{
+  font-family: $font-header;
+  font-weight: 700;
+  text-rendering:optimizeLegibility; 
+}
+
+h1 {
+  font-size: 4em;
+  font-size: 7vmin;
+  line-height: 1.2;
+  margin-bottom: 0.4em;
+}
+h2 {
+  font-size: 3em;
+  font-size: 6vmin;
+  line-height: 1.2;
+  margin-bottom: 0.4em;
+}
+h3{
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin-bottom: 0.4em;
+}
+
+/*----------------------------------------------   
+--Typography: paragraph and friends
+-----------------------------------------------  */
+p {
+  margin-bottom: 1.7em;
+  font-family: $font-paragraph;
+}
+
+/*----------------------------------------------   
+--Row Class
+-----------------------------------------------  */
+code, pre{
+  color: rgba(255,255,255,0.9);
+  font-size: 90%;
+  margin: 0;
+}
+
+/*----------------------------------------------   
+--Links
+-----------------------------------------------  */
+
+a{
+  color: #f16d49;;
+  @include transition(all 0.7s ease);
+
+  &:hover{
+    color: lighten(#f16d49, 20);
+    @include transition(all 0.7s ease);
+  }
+}

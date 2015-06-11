@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<head>
+
+<!-- Title and Meta
+================================================== -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title>vCard to Google Maps</title>
+<meta name="author" content="Stephen Scaff">
+
+<!-- Mobile Specific Meta
+================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale = 1, maximum-scale=1, user-scalable=no" />
+
+<!-- Google Analytics: Urban Influence
+================================================== -->
+<script> 
+var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-2588188-4"]);
+  _gaq.push(["_setDomainName", "urbaninfluence.com"]);
+  _gaq.push(["_trackPageview"]);
+
+  (function() {
+    var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+    ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+    var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ </script>
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="css/app.css">
+
+<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?sensor=false&#038;ver=1'></script>
+
+</head>
+
+<body>
+
+<!-- header-main
+================================================== -->
+<header>
+	<div class="vcenter">
+		<h1 class="logo">vcard gmaps</h1>
+		<a class="btn" href="">Download on Gihub</a>
+	</div>
+</header>
+
+<!-- Main
+================================================== -->	
+<main role="main">
+
+<!-- Banner
+================================================== -->
+<section class="sect-banner">
+	<div class="content">
+		<h1>VCard to Google Maps</h1>
+		<p>Generating multiple Google Maps from vCard Addresses.</p>
+	</div>
+	</section>
+
+<!-- Map Blocks
+================================================== -->
+<section class="has-table">
+  <div class="row-table">
+   <div class="half has-content">
+   	<h3>vCard Markup</h3>
+				<pre>
+<code>
+&lt;article class="js-map">
+ &lt;div class="vcard-gmap">
+  &lt;span class="location">Urban Influence&lt;/span>
+  &lt;span class="address">1508 10th Ave&lt;/span>
+  &lt;span class="city">Seattle&lt;/span>
+  &lt;span class="state">WA&lt;/span>
+  &lt;span class="zip">98122&lt;/span>
+  &lt;span class="country">USA&lt;/span>
+  &lt;span class="phone">310-543-0375&lt;/span>
+  &lt;span class="zoom">11&lt;/span>
+ &lt;/div>
+&lt;/article>
+</code>
+</pre>
+   </div>
+
+   <div class="half">
+				<article class="js-map">
+			  <div class="vcard-gmap">
+			   <span class="location">Urban Influence</span>
+				   <span class="address">1508 10th Ave</span>
+				   <span class="city">Seattle</span>
+				   <span class="state">WA</span>
+				   <span class="zip">98122</span>
+				   <span class="country">USA</span>
+				   <span class="phone">310-543-0375</span>
+				   <span class="zoom">11</span>
+			  </div>
+				</article>
+   </div>
+  </div>
+ </section>
+
+
+<section class="has-table">
+  <div class="row-table">
+   <div class="half has-content">
+   <h3>vCard Markup</h3>
+				<pre>
+<code>
+&lt;article class="js-map">
+ &lt;div class="vcard-gmap">
+  &lt;div class="location">Little Chaun's Home&lt;/div>
+  &lt;div class="address">13035 E. Cape Horn Drive&lt;/div>
+  &lt;div class="city">Tuscon&lt;/div>
+  &lt;div class="state">AZ&lt;/div>
+  &lt;div class="zip">85749&lt;/div>
+  &lt;div class="country">USA&lt;/div>
+  &lt;div class="zoom">13&lt;/div>
+ &lt;/div>span
+&lt;/article>
+</code>
+</pre>
+   </div>
+
+   <div class="half">
+				<article class="js-map">
+			  <div class="vcard-gmap">
+			   <span class="location">Little Chaun's Home</span>
+			   <span class="address">13035 E. Cape Horn Drive</span>
+			   <span class="city">Tucson</span>
+			   <span class="state">AZ</span>
+			   <span class="zip">85749</span>
+			   <span class="country">USA</span>
+			   <span class="zoom">13</span>
+			  </div>
+				</article>
+   </div>
+  </div>
+ </section>
+
+<!-- Sect Banner
+================================================== -->
+<section class="sect-banner">
+	<div class="row">
+		<h2>Let's Go Full Width</h2>
+	</div>
+</section>
+
+<!-- Sect Map
+================================================== -->
+<section class="sect-map">		
+	<article class="js-map">
+			  <div class="vcard-gmap">
+			   <span class="location">Urban Influence</span>
+				   <span class="address">1508 10th Ave</span>
+				   <span class="city">Seattle</span>
+				   <span class="state">WA</span>
+				   <span class="zip">98122</span>
+				   <span class="country">USA</span>
+				   <span class="phone">310-543-0375</span>
+				   <span class="zoom">11</span>
+			  </div>
+				</article>
+</section>
+
+</main>
+
+<!-- Footer
+================================================== -->
+<footer>
+	<div class="row">
+		<p>A little thing by <a href="http://twitter.com/stephenscaff">Stephen Scaff</a></p>
+	</div>
+</footer>
+
+<!-- Le javascript
+================================================== -->	
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/vcard-gmaps.js'></script>
+<script type='text/javascript' src='js/scripts.js'></script>
+
+</body>
+</html>
+
