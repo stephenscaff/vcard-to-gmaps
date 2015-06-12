@@ -44,24 +44,25 @@ img,object,embed{
 			background: transparent;
 		}
 	}
-	
+	/*----------------------------------------------   
+--Info Window / Popup
+-----------------------------------------------  */
 	.gm-style-iw > div{
-		overflow:	hidden !important;
-		height:	auto !important;
-		line-height:	1.6 !important;
+		font-size: 1.2em;
+		overflow:	hidden;
+		height:	auto;
+		line-height:	1.6;
 	}
-	.gmnoscreen {
-	 	display: none !important;
-	}
-	
-	.gmnoprint.gm-style-cc {
-	 	display: none !important;
-	}
-	
+
+/*----------------------------------------------   
+--Hide some of the Google inserted stuff
+-----------------------------------------------  */
+	.gmnoscreen, 	
 	.gm-style-cc {
-	 display: none;
+	 	display: none !important;
 	}
-}
+}	
+
 
 /*----------------------------------------------   
 --Row Class

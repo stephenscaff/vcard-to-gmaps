@@ -550,7 +550,13 @@ img, object, embed {
   height: 100%;
   min-height: 35em;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  	/*----------------------------------------------   
+  --Info Window / Popup
+  -----------------------------------------------  */
+  /*----------------------------------------------   
+  --Hide some of the Google inserted stuff
+  -----------------------------------------------  */ }
   @media (max-width: 58em) {
     .js-map::after {
       content: '';
@@ -561,15 +567,13 @@ img, object, embed {
       z-index: 99;
       background: transparent; } }
   .js-map .gm-style-iw > div {
-    overflow: hidden !important;
-    height: auto !important;
-    line-height: 1.6 !important; }
-  .js-map .gmnoscreen {
-    display: none !important; }
-  .js-map .gmnoprint.gm-style-cc {
-    display: none !important; }
+    font-size: 1.2em;
+    overflow: hidden;
+    height: auto;
+    line-height: 1.6; }
+  .js-map .gmnoscreen,
   .js-map .gm-style-cc {
-    display: none; }
+    display: none !important; }
 
 /*----------------------------------------------   
 --Row Class
